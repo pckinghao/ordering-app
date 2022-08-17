@@ -1,3 +1,5 @@
+const path = require('path') // eslint-disable-line
+
 const config = {
   projectName: 'demo',
   date: '2022-7-18',
@@ -59,10 +61,18 @@ const config = {
         }
       }
     }
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
+  },
+  sass: {
+    resource: [
+        'src/common/css/mixin.scss'
+    ]
   }
 }
 
-module.exports = function (merge) {
+export default function (merge) {
   if (process.env.NODE_ENV === 'development') {
     return merge({}, config, require('./dev'))
   }

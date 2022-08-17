@@ -1,0 +1,14 @@
+.index {
+  height: 100%;
+  text-align: center;
+  @include flex($d: column, $j: space-around, $a: center);
+  .logo {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid #1aad19;
+  }
+  .loginbtn {
+    width: 60%;
+  }
+}
