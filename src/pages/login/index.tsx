@@ -14,6 +14,7 @@ const Index = () => {
     <View className='index'>
       <View className='logo'></View>
       <Button size='default' plain type='primary' className='loginbtn'>登录</Button>
+      <Button size='default' plain type='primary' className='loginbtn'>登录</Button>
     </View>
   )
 }
